@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Kalkulator</title>
+ <style>
+  /* przyciski mają 10vh wysokości */
+
+  /* Panel bez wyświetlacza ma mieć 70vh (z wyświetlaczem 85vh) */
+
+  * {
+   margin: 0;
+   padding: 0;
+  }
+
+  body {
+   display: flex;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+  }
+
+  /* kalkulator */
+
+  .panel {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: space-between;
+   width: 60%;
+   min-width: 500px;
+   height: 85vh;
+   /* margin: auto; */
+   /* background-color: #ddd; */
+   font-family: 'roboto condensed', arial;
+   color: white;
+
+  }
+
+  .result {
+   /* display: flex;
+   justify-content: flex-end;
+   align-items: center; */
+   flex-basis: 100%;
+   height: 15vh;
+   background-color: #000;
+   line-height: 15vh;
+   text-align: right;
+   padding-right: 30px;
+   font-size: 8vh;
+  }
+
+  div.result~div {
+
+   height: 10vh;
+   flex-basis: 30%;
+   background-color: cadetblue;
+   font-size: 5vh;
+   text-align: center;
+   line-height: 10vh;
+
+   cursor: pointer;
+  }
+
+  div>div:nth-last-child(1),
+  div>div:nth-last-child(2) {
+   flex-basis: 45%;
+  }
+
+  div.result~div:hover {
+   background-color: royalblue;
+  }
+ </style>
+</head>
+
+<body>
+ <div class="panel">
+  <div class="result">2 343.99</div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>+</div>
+  <div>0</div>
+  <div>-</div>
+  <div>/</div>
+  <div>.</div>
+  <div>*</div>
+  <div>C</div>
+  <div>=</div>
+ </div>
+</body>
+
+</html>
